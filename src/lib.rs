@@ -516,9 +516,9 @@ impl EguiUserTextures {
 /// Stores physical size and scale factor, is used as a helper to calculate logical size.
 #[derive(Component, Debug, Default, Clone, Copy, PartialEq, ExtractComponent)]
 pub struct WindowSize {
-    physical_width: f32,
-    physical_height: f32,
-    scale_factor: f32,
+    pub physical_width: f32,
+    pub physical_height: f32,
+    pub scale_factor: f32,
 }
 
 impl WindowSize {
